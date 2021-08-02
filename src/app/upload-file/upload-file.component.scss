@@ -1,0 +1,30 @@
+.upload-wrapper .card {
+    margin-top: 20px;
+    animation: slide-in 0.5s;
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 30px #00000033;
+    border-radius: 15px;
+  }
+  .card-title{
+    padding: 1em 1em 0em 1em;
+  }
+  .btn-browse{
+    border-radius: 27px !important;
+    color: #37c1ce;
+    background: white;
+    border: 3px solid #37c1ce;
+    font-weight: bold;
+    width: 15em;
+    padding: 7px;
+  }
+  .btn-send{
+    border-radius: 27px !important;
+    color: white;
+    background: #37c1ce;
+    border: 3px solid #37c1ce;
+    font-weight: bold;
+    width: 9em;
+    padding: 1px;
+    margin: 0 3em 2em 0;
+    display: none;
+  }

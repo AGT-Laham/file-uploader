@@ -1,0 +1,29 @@
+<div class="upload-box">
+    <div class="container upload-wrapper">
+      <div class="card col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+          <h5 class=" fw-bolder card-title d-flex justify-content-center flex-column align-items-right">JSON file</h5>
+          <hr>
+          <div class="d-flex justify-content-center flex-column align-items-center p-5">
+            <input
+              
+              hidden
+              type="file"
+              class="form-control"
+              id="file"/>
+              <div class="form-floating">
+                <textarea [(ngModel)] = "jsonText" (change)= "onJsonChange()" class="json-text" placeholder="Paste your JSON here ..." id="floatingTextarea"></textarea>
+                <p *ngIf="!validJSON">invalid json</p>
+              </div>
+          </div>
+          <div class="col align-self-end">
+            <button class="btn-send" (click) = sendJsonFile() *ngIf="validJSON">
+                <!-- <i class="bi bi-archive-fill"></i> -->
+                Send
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>                  
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>

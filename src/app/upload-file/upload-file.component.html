@@ -1,0 +1,64 @@
+<!-- <div class="upload-box">
+  <div class="container upload-wrapper">
+    <div class="card col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+      <div class="d-flex justify-content-center flex-column align-items-center p-5">
+        <h3 >Upload a file</h3>
+        <hr>
+        <div>
+          <input
+            (change)="onFileChange($event)"
+            hidden
+            type="file"
+            class="form-control"
+            id="file"/>
+          <button class="btn btn-primary browse" (click)="fileUpload()">
+            Browse
+          </button>
+        </div>
+        <p>{{ fileName }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   -->
+
+   <div class="upload-box">
+    <div class="container upload-wrapper">
+      <div class="card col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+          <h5 class=" fw-bolder card-title d-flex justify-content-center flex-column align-items-right">Upload a file</h5>
+          <hr>
+          <div class="d-flex justify-content-center flex-column align-items-center p-5">
+            <input
+              (change)="onFileChange($event)"
+              hidden
+              type="file"
+              class="form-control"
+              id="file"/>
+            <button class="btn-browse" (click)="fileUpload()">
+                <!-- <i class="bi bi-archive-fill"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg>
+              Browse
+            </button>
+            <p>{{ fileName }}</p>
+          </div>
+          <div class="col align-self-end">
+            <button id="btnSend" class="btn-send" (click) = "sendFile()">
+                <!-- <i class="bi bi-archive-fill"></i> -->
+                Send
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>                  
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    
